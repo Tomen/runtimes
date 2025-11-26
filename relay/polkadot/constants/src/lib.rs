@@ -44,7 +44,7 @@ pub mod currency {
 pub mod time {
 	use polkadot_primitives::{BlockNumber, Moment};
 	use polkadot_runtime_common::prod_or_fast;
-	pub const MILLISECS_PER_BLOCK: Moment = 6000;
+	pub const MILLISECS_PER_BLOCK: Moment = 50;
 	pub const SLOT_DURATION: Moment = MILLISECS_PER_BLOCK;
 	pub const EPOCH_DURATION_IN_SLOTS: BlockNumber = prod_or_fast!(4 * HOURS, MINUTES);
 
